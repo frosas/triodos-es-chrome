@@ -1,6 +1,6 @@
-# Improved triodos.es
+# triodos.es Chrome extension
 
-A Chrome extension to improve Triodos bank spanish site
+A Chrome extension that improves Triodos bank spanish site
 
 ## Features
 
