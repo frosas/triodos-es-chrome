@@ -1,7 +1,7 @@
 {
-    "name": "Improved triodos.es",
+    "name": "triodos.es mejorado",
     "version": "1.0",
-    "description": "Some improvements to triodos.es",
+    "description": "Algunas mejoras a triodos.es",
     "content_scripts": [
         {
             "matches": ["http://www.triodos.es/*"],
