@@ -2,6 +2,9 @@
     "name": "triodos.es mejorado",
     "version": "1.0",
     "description": "Algunas mejoras a triodos.es",
+    "icons": {
+        "128": "icon-128.png"
+    },
     "content_scripts": [
         {
             "matches": ["http://www.triodos.es/*"],
