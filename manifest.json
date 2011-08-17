@@ -1,15 +1,14 @@
 {
-    "name": "triodos.es easy login",
+    "name": "Improved triodos.es",
     "version": "1.0",
-    "description": "Easy logging in for triodos.es users",
-    "permissions": [
-        "tabs", 
-        "http://www.triodos.es/",
-        "https://banking.triodos.es/"
-    ],
-    "background_page": "background.html",
-    "page_action": {
-        "default_icon": "page-action-icon.png",
-        "default_title": "Remember that easy login is acting on this page"
-    }
+    "description": "Some improvements to triodos.es",
+    "content_scripts": [
+        {
+            "matches": ["http://www.triodos.es/*"],
+            "js": ["jquery.min.js", "public-page.js"]
+        }, {
+            "matches": ["https://banking.triodos.es/isum/Main?ISUM_SCR=login*"],
+            "js": ["jquery.min.js", "login-page.js"]
+        }
+    ]
 }
