@@ -11,3 +11,9 @@ A Chrome extension that improves Triodos bank spanish site
 
 - Remove class newwindow before being used instead of removing target later
 - Remove autocomplete="off" instead of using local storage to save credentials
+
+## Installation
+
+You can install it from Chrome Web Store:
+
+https://chrome.google.com/webstore/detail/ngldkkpamfojbdcpdlcamfhnfgpmhgeo
