@@ -2,13 +2,13 @@
     "manifest_version": 2,
     "name": "Triodos Mejorado",
     "description": "Algunas mejoras a triodos.es",
-    "version": "1.2",
+    "version": "1.2.1",
     "icons": {"128": "icon-128.png"},
     "content_scripts": [{
         "matches": ["http://www.triodos.es/*"],
-        "js": ["jquery.min.js", "public-page.js"]
+        "js": ["jquery-1.9.0.min.js", "public-page.js"]
     }, {
         "matches": ["https://banking.triodos.es/isum/Main?ISUM_SCR=login*"],
-        "js": ["jquery.min.js", "login-page.js"]
+        "js": ["jquery-1.9.0.min.js", "login-page.js"]
     }]
 }
