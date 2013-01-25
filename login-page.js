@@ -1,10 +1,14 @@
-$('form input:lt(2)').each(function(i) {
-
-    var storageId = 'rememberedInputs.' + i
-
-    this.value = localStorage.getItem(storageId)
-
-    $(this).change(function() {
-        localStorage.setItem(storageId, this.value)
+var setInputRemembered = function(input, id) {
+    var storageId = 'rememberedInputs.' + id
+    input.value = localStorage.getItem(storageId)
+    input.addEventListener('change', function() {
+        localStorage.setItem(storageId, input.value)
     })
-})
+}
+
+var inputs = document.querySelectorAll('form input')
+var USUARIO_INDEX = 0
+var NIF_INDEX = 1
+
+setInputRemembered(inputs[USUARIO_INDEX], USUARIO_INDEX)
+setInputRemembered(inputs[NIF_INDEX], NIF_INDEX)
